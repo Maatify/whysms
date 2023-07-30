@@ -52,10 +52,12 @@ class WhySms extends Request
                 'remaining_unit' => $response['data']['remaining_unit'] ?? '',
                 'expired_on'     => $response['data']['expired_on'] ?? '',
             ];
+        }else{
+            return [
+                'success' => false,
+                'error' => $response['error']
+            ];
         }
-        return [
-            'success' => false
-        ];
     }
 
     public function SendSms(string $phone, string $message): array
@@ -81,9 +83,11 @@ class WhySms extends Request
                 'status'  => $response['data']['status'] ?? '',
                 'cost'    => $response['data']['cost'] ?? '',
             ];
+        }else{
+            return [
+                'success' => false,
+                'error' => $response['error']
+            ];
         }
-        return [
-            'success' => false
-        ];
     }
 }
