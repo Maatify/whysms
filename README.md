@@ -1,3 +1,11 @@
+[![Current version](https://img.shields.io/packagist/v/maatify/whysms)][pkg]
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/whysms)][pkg]
+[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/whysms)][pkg-stats]
+[![Total Downloads](https://img.shields.io/packagist/dt/maatify/whysms)][pkg-stats]
+[![Stars](https://img.shields.io/packagist/stars/maatify/whysms)](https://github.com/maatify/whysms/stargazers)
+
+[pkg]: <https://packagist.org/packages/maatify/whysms>
+[pkg-stats]: <https://packagist.org/packages/maatify/whysms/stats>
 # Installation
 
 ```shell

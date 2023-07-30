@@ -69,12 +69,12 @@ abstract class Request
                 $response['error'] = "(err-" . __METHOD__ . ") cURL Error ($curl_errno): $curl_error";
             } else {
                 if ($resultArray = json_decode($result, true)) {
-                    Logger::RecordLog([
-                        $resultArray,
-                        $this->url,
-                        __METHOD__,], 'Debug_' . __FUNCTION__);
+//                    Logger::RecordLog([
+//                        $resultArray,
+//                        $this->url,
+//                        __METHOD__,], 'Debug_' . __FUNCTION__);
                     $response = $resultArray;
-//                    $response['success'] = true;
+                    $response['success'] = true;
                 } else {
                     $response['success'] = false;
                     $response['error'] = ($httpCode != 200) ? "Error header response " . $httpCode : "There is no response from server (err-" . __METHOD__ . ")";

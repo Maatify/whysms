@@ -42,6 +42,7 @@
     }
   },
   "require": {
+    "php": ">=8.0",
     "maatify/logger": "^1.0",
     "ext-curl": "*"
   },
