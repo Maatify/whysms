@@ -42,7 +42,7 @@ print_r($result);
 >           [expired_on] => 1st Jun 33, 7:16 PM
 >       )
 
-#### Error Example
+##### Error Example
 >
 >       Array
 >       (
