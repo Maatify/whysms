@@ -86,7 +86,7 @@ class WhySms extends Request
         }else{
             return [
                 'success' => false,
-                'error' => $response['error']
+                'error' => $response['error']??''
             ];
         }
     }
