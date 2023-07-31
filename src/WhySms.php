@@ -95,4 +95,23 @@ class WhySms extends Request
             ];
         }
     }
+
+
+
+    public function SentSmsLog(int $page = 1): array
+    {
+        $this->url = $this->url_v3 . 'sms?page=' . $page . '&limit=100';
+        $response = $this->Curl();
+        if(!empty($response['success']) && !empty($response['data'])){
+            return [
+                'success'        => true,
+                'data' => $response['data'],
+            ];
+        }else{
+            return [
+                'success' => false,
+                'error' => $response['error']
+            ];
+        }
+    }
 }
