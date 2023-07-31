@@ -78,7 +78,7 @@ abstract class Request
                 }
             }
 
-            if (empty($response['success'])) {
+            if (empty($response['success']) || $response['status'] == 'error') {
                 Logger::RecordLog([
                     $response,
                     $this->url,
