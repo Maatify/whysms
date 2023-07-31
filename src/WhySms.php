@@ -72,6 +72,11 @@ class WhySms extends Request
                 'message'   => $message,
             ]
         );
+        return $this->HandleSmsResponse($response);
+    }
+
+    private function HandleSmsResponse(array $response): array
+    {
         if(!empty($response['success']) && !empty($response['data'])){
             return [
                 'success' => true,
