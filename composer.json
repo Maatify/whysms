@@ -1,6 +1,6 @@
 {  "name": "maatify/whysms",
   "description": "PHP library for WhySms API handler, known by our team",
-  "version": "1.1.2",
+  "version": "5.0.1",
   "type": "library",
   "keywords": [
     "PHP",
@@ -40,14 +40,8 @@
       "role": "IOS Developer"
     }
   ],
-  "config": {
-    "platform": {
-      "php": "8.0.0"
-    }
-  },
   "require": {
-    "php": ">=8.0",
-    "maatify/logger": "^1.0",
+    "maatify/logger": "^5",
     "ext-curl": "*"
   },
   "autoload": {
