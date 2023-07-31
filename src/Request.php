@@ -82,6 +82,7 @@ abstract class Request
                 Logger::RecordLog([
                     $response,
                     $this->url,
+                    $params,
                    __METHOD__], 'Debug_' . __FUNCTION__);
             }
 
